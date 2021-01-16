@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS_Slider_Animation</title>
+    <link href="assests/css/normalize.css " rel="stylesheet">
+    <style>
+        section{
+            width: 400vw;
+            height: 100vh;
+            display: flex;
+            animation-name: slider;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 1s;
+        }
+        div{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        img{
+            width: 100vw;
+            height: 100vh;
+        }
+        @keyframes slider{
+            0% {
+                margin-left: 0px;
+            }
+            25%{
+                margin-left: -100vw;
+            }
+            50%{
+                margin-left: -200vw;
+            }
+            75%{
+                margin-left: -300vw;
+            }
+            100%{
+                margin-left: -400vw;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <img src="assests/img/pexels-lisa-fotios-1161547.jpg ">
+    </div>
+    <div>
+        <img src="assests/img/markus-spiske-qjnAnF0jIGk-unsplash.jpg ">
+    </div>
+    <div>
+        <img src="assests/img/pexels-kaboompics-com-5836.jpg">
+    </div>
+    <div>
+        <img src="assests/img/element5-digital-OyCl7Y4y0Bk-unsplash.jpg">
+    </div>
+    <div>
+        <img src="assests/img/vasily-koloda-8CqDvPuo_kI-unsplash.jpg">
+    </div>
+</section>
+</body>
+</html>
